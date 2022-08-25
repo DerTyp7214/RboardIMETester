@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <queries>
+        <package android:name="de.dertyp7214.rboardthememanager" />
+        <package android:name="de.dertyp7214.rboardthememanager.debug" />
+    </queries>
+
     <application
         android:name=".Application"
         android:allowBackup="true"
