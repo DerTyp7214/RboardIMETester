@@ -1,10 +1,11 @@
 package de.dertyp7214.rboardimetester
 
-import com.google.android.material.color.DynamicColors
+import de.dertyp7214.rboardcomponents.utils.ThemeUtils
 
 class Application : android.app.Application() {
     override fun onCreate() {
         super.onCreate()
-        DynamicColors.applyToActivitiesIfAvailable(this)
+        ThemeUtils.applyTheme(this)
+        ThemeUtils.registerActivityLifecycleCallbacks(this)
     }
 }
