@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Rboard IME Tester</string>
+
+    <string name="telegram_channel_url">https://t.me/rkbdigboard</string>
+    <string name="github_url">https://github.com/DerTyp7214/RboardIMETester</string>
+
+    <string name="ime_option_none">None</string>
+    <string name="ime_option_done">Done</string>
+    <string name="ime_option_go">Go</string>
+    <string name="ime_option_next">Next</string>
+    <string name="ime_option_previous">Previous</string>
+    <string name="ime_option_search">Search</string>
+    <string name="ime_option_send">Send</string>
+
+    <string name="input_type_datetime">Datetime</string>
+    <string name="input_type_number">Number</string>
+    <string name="input_type_phone">Phone</string>
+    <string name="input_type_text">Text</string>
+    <string name="ime">IME Actions</string>
+    <string name="type">Input Types</string>
+    <string name="github">GitHub</string>
+    <string name="telegram">Telegram</string>
+    <string name="other">Other</string>
+    <string name="incognito">Incognito</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="password_number">Number Password</string>
 </resources>
