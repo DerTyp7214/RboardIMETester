@@ -24,7 +24,6 @@ import de.dertyp7214.rboardimetester.core.openUrl
 import de.dertyp7214.rboardimetester.data.CheckCardData
 import kotlin.math.roundToInt
 
-
 class MainActivity : AppCompatActivity() {
 
     private val checkCardIme = arrayListOf<CheckCardData>()
