@@ -7,5 +7,9 @@
         <item name="android:navigationBarColor">@android:color/transparent</item>
 
         <item name="popupMenuStyle">@style/PopupStyle</item>
+
+        <item name="android:windowSplashScreenBrandingImage" tools:ignore="NewApi">
+            @drawable/dertyp_branding
+        </item>
     </style>
 </resources>
