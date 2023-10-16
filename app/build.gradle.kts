@@ -22,10 +22,20 @@ android {
         applicationId = "de.dertyp7214.rboardimetester"
         minSdk = 23
         targetSdk = 34
-        versionCode = 113
-        versionName = "1.1.3"
+        versionCode = 114
+        versionName = "1.1.4"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        resourceConfigurations += listOf(
+            "af", "cs", "da", "de",
+            "el", "en", "es", "fi",
+            "fr", "hi", "hu", "id",
+            "it", "ja", "nl", "no",
+            "pl", "pt", "ro", "ru",
+            "sv", "uk", "vi",
+            "zh-rCN", "zh-rTW"
+        )
     }
 
     buildTypes {
