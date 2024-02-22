@@ -23,7 +23,7 @@ jobs:
 
       - uses: nttld/setup-ndk@v1
         with:
-          ndk-version: r26
+          ndk-version: r26c
 
       - name: Setup JDK
         uses: actions/setup-java@v4
@@ -33,7 +33,7 @@ jobs:
 
 
       - name: Cache Gradle dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: |
             ~/.gradle/caches
@@ -43,7 +43,7 @@ jobs:
           restore-keys: ${{ runner.os }}-gradle-
 
       - name: Cache build cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: |
             ${{ github.workspace }}/.ccache
@@ -74,7 +74,7 @@ jobs:
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_PASSWORD }}
         env:
-          BUILD_TOOLS_VERSION: 34.0.0
+          BUILD_TOOLS_VERSION: '35.0.0-rc1'
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
