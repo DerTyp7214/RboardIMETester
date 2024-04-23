@@ -13,13 +13,13 @@
     <string name="input_type_number">Szám</string>
     <string name="input_type_phone">Telefonszám</string>
     <string name="input_type_text">Szöveg</string>
-    <string name="ime">IME műveletek</string>
-    <string name="type">Bemeneti típusok</string>
+    <string name="ime">IME Műveletek</string>
+    <string name="type">Bemeneti Típusok</string>
     <string name="github">GitHub</string>
     <string name="telegram">Telegram</string>
-    <string name="other">Más</string>
-    <string name="incognito">Incognito</string>
-    <string name="password">Password</string>
+    <string name="other">Egyéb</string>
+    <string name="incognito">Inkognitó</string>
+    <string name="password">Jelszó</string>
     <string name="email">Email</string>
-    <string name="password_number">Szám jelszó</string>
+    <string name="password_number">Szám Jelszó</string>
 </resources>

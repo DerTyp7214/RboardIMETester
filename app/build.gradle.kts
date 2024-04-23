@@ -10,7 +10,7 @@ plugins {
 
 android {
     compileSdkPreview = "VanillaIceCream"
-    buildToolsVersion = "35.0.0 rc1"
+    buildToolsVersion = "35.0.0 rc3"
     buildFeatures.dataBinding = true
 
     buildFeatures.viewBinding = true
@@ -22,8 +22,8 @@ android {
         applicationId = "de.dertyp7214.rboardimetester"
         minSdk = 23
         targetSdk = 34
-        versionCode = 121
-        versionName = "1.2.1"
+        versionCode = 122
+        versionName = "1.2.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
