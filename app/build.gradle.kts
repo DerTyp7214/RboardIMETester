@@ -10,7 +10,7 @@ plugins {
 
 android {
     compileSdkPreview = "VanillaIceCream"
-    buildToolsVersion = "35.0.0 rc1"
+    buildToolsVersion = "35.0.0 rc3"
     buildFeatures.dataBinding = true
 
     buildFeatures.viewBinding = true
@@ -22,17 +22,17 @@ android {
         applicationId = "de.dertyp7214.rboardimetester"
         minSdk = 23
         targetSdk = 34
-        versionCode = 121
-        versionName = "1.2.1"
+        versionCode = 123
+        versionName = "1.2.3"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         resourceConfigurations += listOf(
-            "af", "cs", "da", "de",
+            "ar", "cs", "da", "de",
             "el", "en", "es", "fi",
             "fr", "hi", "hu", "id",
             "it", "ja", "nl", "no",
-            "pl", "pt", "ro", "ru",
+            "pl", "pt-rBR", "ro", "ru",
             "sv", "uk", "vi",
             "zh-rCN", "zh-rTW"
         )
