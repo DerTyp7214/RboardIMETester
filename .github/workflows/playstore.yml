@@ -23,12 +23,12 @@ jobs:
 
       - uses: nttld/setup-ndk@v1
         with:
-          ndk-version: r26d
+          ndk-version: r27-beta2
 
       - name: Setup JDK
         uses: actions/setup-java@v4
         with:
-          java-version: 21
+          java-version: 22
           distribution: temurin
 
 
@@ -74,7 +74,7 @@ jobs:
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_PASSWORD }}
         env:
-          BUILD_TOOLS_VERSION: '35.0.0-rc3'
+          BUILD_TOOLS_VERSION: '35.0.0-rc4'
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
