@@ -22,15 +22,15 @@ android {
         applicationId = "de.dertyp7214.rboardimetester"
         minSdk = 23
         targetSdk = 35
-        versionCode = 124002
-        versionName = "1.2.4"
+        versionCode = 125000
+        versionName = "1.2.5"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         resourceConfigurations += listOf(
             "ar", "cs", "da", "de",
             "el", "en", "es", "fi",
-            "fr", "hi", "hu", "id",
+            "fr", "hi", "hu", "in",
             "it", "ja", "nl", "no",
             "pl", "pt-rBR", "ro", "ru",
             "sv", "uk", "vi",
@@ -63,12 +63,6 @@ android {
             "-P",
             "plugin:androidx.compose.compiler.plugins.kotlin:suppressKotlinVersionCompatibilityCheck=true"
         )
-    }
-
-    tasks.withType<KotlinCompile> {
-        kotlinOptions {
-            jvmTarget = JvmTarget.JVM_21.description
-        }
     }
 
     packaging {
