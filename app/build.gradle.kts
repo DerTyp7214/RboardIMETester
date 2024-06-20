@@ -9,8 +9,8 @@ plugins {
 
 
 android {
-    compileSdkPreview = "VanillaIceCream"
-    buildToolsVersion = "35.0.0 rc4"
+    compileSdk = 35
+    buildToolsVersion = "35.0.0"
     buildFeatures.dataBinding = true
 
     buildFeatures.viewBinding = true
@@ -21,7 +21,7 @@ android {
     defaultConfig {
         applicationId = "de.dertyp7214.rboardimetester"
         minSdk = 23
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 124002
         versionName = "1.2.4"
 
@@ -53,12 +53,12 @@ android {
     }
     compileOptions {
         isCoreLibraryDesugaringEnabled = true
-        sourceCompatibility = JavaVersion.VERSION_22
-        targetCompatibility = JavaVersion.VERSION_22
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 
     kotlinOptions {
-        jvmTarget = JvmTarget.JVM_22.description
+        jvmTarget = JvmTarget.JVM_21.description
         freeCompilerArgs += listOf(
             "-P",
             "plugin:androidx.compose.compiler.plugins.kotlin:suppressKotlinVersionCompatibilityCheck=true"
@@ -67,7 +67,7 @@ android {
 
     tasks.withType<KotlinCompile> {
         kotlinOptions {
-            jvmTarget = JvmTarget.JVM_22.description
+            jvmTarget = JvmTarget.JVM_21.description
         }
     }
 
