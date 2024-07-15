@@ -22,7 +22,7 @@ android {
         applicationId = "de.dertyp7214.rboardimetester"
         minSdk = 23
         targetSdk = 35
-        versionCode = 125001
+        versionCode = 125002
         versionName = "1.2.5"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
