@@ -16,6 +16,7 @@ lifecycleViewmodelKtx = "2.8.3"
 preference-ktx = "1.2.1"
 material = "1.12.0"
 desugar_jdk_libs_nio = "2.0.4"
+r8 = "8.6.15"
 
 [libraries]
 appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
@@ -34,6 +35,7 @@ kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "
 kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect ", version.ref = "kotlinreflect" }
 desugar_jdk_libs_nio = { module = "com.android.tools:desugar_jdk_libs_nio", version.ref = "desugar_jdk_libs_nio" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+r8 = { module = "com.android.tools:r8", version.ref = "r8" }
 
 [plugins]
 ksp = { id = "com.google.devtools.ksp", version.ref = "kspPlugin" }
