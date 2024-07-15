@@ -9,8 +9,8 @@ plugins {
 
 
 android {
-    compileSdkPreview = "VanillaIceCream"
-    buildToolsVersion = "35.0.0 rc4"
+    compileSdk = 35
+    buildToolsVersion = "35.0.0"
     buildFeatures.dataBinding = true
 
     buildFeatures.viewBinding = true
@@ -21,16 +21,16 @@ android {
     defaultConfig {
         applicationId = "de.dertyp7214.rboardimetester"
         minSdk = 23
-        targetSdk = 34
-        versionCode = 124002
-        versionName = "1.2.4"
+        targetSdk = 35
+        versionCode = 125002
+        versionName = "1.2.5"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         resourceConfigurations += listOf(
             "ar", "cs", "da", "de",
             "el", "en", "es", "fi",
-            "fr", "hi", "hu", "id",
+            "fr", "hi", "hu", "in",
             "it", "ja", "nl", "no",
             "pl", "pt-rBR", "ro", "ru",
             "sv", "uk", "vi",
@@ -53,22 +53,16 @@ android {
     }
     compileOptions {
         isCoreLibraryDesugaringEnabled = true
-        sourceCompatibility = JavaVersion.VERSION_22
-        targetCompatibility = JavaVersion.VERSION_22
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 
     kotlinOptions {
-        jvmTarget = JvmTarget.JVM_22.description
+        jvmTarget = JvmTarget.JVM_21.description
         freeCompilerArgs += listOf(
             "-P",
             "plugin:androidx.compose.compiler.plugins.kotlin:suppressKotlinVersionCompatibilityCheck=true"
         )
-    }
-
-    tasks.withType<KotlinCompile> {
-        kotlinOptions {
-            jvmTarget = JvmTarget.JVM_22.description
-        }
     }
 
     packaging {

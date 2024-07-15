@@ -7,6 +7,7 @@ import android.view.ViewGroup.LayoutParams
 import android.view.inputmethod.EditorInfo
 import android.widget.LinearLayout
 import android.widget.LinearLayout.HORIZONTAL
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -68,6 +69,10 @@ class MainActivity : AppCompatActivity() {
     private val otherCards = arrayListOf<Pair<CheckCard, Boolean>>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        enableEdgeToEdge()
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            window.isNavigationBarContrastEnforced = false
+        }
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
