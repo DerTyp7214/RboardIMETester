@@ -9,8 +9,8 @@ plugins {
 
 
 android {
-    compileSdk = 35
-    buildToolsVersion = "35.0.0"
+    compileSdkPreview = "Baklava"
+    buildToolsVersion = "36.0.0 rc1"
     buildFeatures.dataBinding = true
 
     buildFeatures.viewBinding = true
@@ -22,8 +22,8 @@ android {
         applicationId = "de.dertyp7214.rboardimetester"
         minSdk = 23
         targetSdk = 35
-        versionCode = 125002
-        versionName = "1.2.5"
+        versionCode = 126001
+        versionName = "1.2.6"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
@@ -53,12 +53,12 @@ android {
     }
     compileOptions {
         isCoreLibraryDesugaringEnabled = true
-        sourceCompatibility = JavaVersion.VERSION_21
-        targetCompatibility = JavaVersion.VERSION_21
+        sourceCompatibility = JavaVersion.current()
+        targetCompatibility = JavaVersion.current()
     }
 
     kotlinOptions {
-        jvmTarget = JvmTarget.JVM_21.description
+        jvmTarget = JavaVersion.current().toString()
         freeCompilerArgs += listOf(
             "-P",
             "plugin:androidx.compose.compiler.plugins.kotlin:suppressKotlinVersionCompatibilityCheck=true"
