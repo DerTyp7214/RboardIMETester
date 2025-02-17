@@ -28,6 +28,12 @@ jobs:
         with:
           cmake-version: '3.31.5'
 
+      - name: Setup Ninja
+        run: sudo apt-get install ninja-build
+     
+      - name: Ninja Version
+        run: ninja --version
+
       - uses: nttld/setup-ndk@v1
         with:
           ndk-version: r28
