@@ -24,11 +24,11 @@ jobs:
       - name: Setup cmake
         uses: jwlawson/actions-setup-cmake@v2
         with:
-          cmake-version: '3.31.0'
+          cmake-version: '3.31.5'
 
       - uses: nttld/setup-ndk@v1
         with:
-          ndk-version: r27c
+          ndk-version: r28
 
       - name: Setup JDK
         uses: actions/setup-java@v4
@@ -80,7 +80,7 @@ jobs:
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_PASSWORD }}
         env:
-          BUILD_TOOLS_VERSION: '36.0.0-rc1'
+          BUILD_TOOLS_VERSION: '36.0.0-rc5'
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4

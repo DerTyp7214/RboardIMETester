@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.config.JvmTarget
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id("com.android.application")
     kotlin("android")
@@ -10,7 +8,7 @@ plugins {
 
 android {
     compileSdkPreview = "Baklava"
-    buildToolsVersion = "36.0.0 rc1"
+    buildToolsVersion = "36.0.0 rc5"
     buildFeatures.dataBinding = true
 
     buildFeatures.viewBinding = true
@@ -22,21 +20,23 @@ android {
         applicationId = "de.dertyp7214.rboardimetester"
         minSdk = 23
         targetSdk = 35
-        versionCode = 126003
+        versionCode = 126004
         versionName = "1.2.6"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-
-        resourceConfigurations += listOf(
-            "ar", "cs", "da", "de",
-            "el", "en", "es", "fi",
-            "fr", "hi", "hu", "in",
-            "it", "ja", "nl", "no",
-            "pl", "pt-rBR", "ro", "ru",
-            "sv", "uk", "vi",
-            "zh-rCN", "zh-rTW"
-        )
     }
+    @Suppress("UnstableApiUsage")
+    androidResources {
+        localeFilters += listOf(
+                "ar", "cs", "da", "de",
+                "el", "en", "es", "fi",
+                "fr", "hi", "hu", "in",
+                "it", "ja", "nl", "no",
+                "pl", "pt-rBR", "ro", "ru",
+                "sv", "uk", "vi",
+                "zh-rCN", "zh-rTW"
+            )
+        }
 
     buildTypes {
         getByName("release") {
