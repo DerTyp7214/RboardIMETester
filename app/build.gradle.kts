@@ -7,8 +7,8 @@ plugins {
 
 
 android {
-    compileSdkPreview = "Baklava"
-    buildToolsVersion = "36.0.0 rc5"
+    compileSdk = 36
+    buildToolsVersion = "36.0.0"
     buildFeatures.dataBinding = true
 
     buildFeatures.viewBinding = true
@@ -19,9 +19,9 @@ android {
     defaultConfig {
         applicationId = "de.dertyp7214.rboardimetester"
         minSdk = 23
-        targetSdk = 35
-        versionCode = 126004
-        versionName = "1.2.6"
+        targetSdk = 36
+        versionCode = 127000
+        versionName = "1.2.7"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
