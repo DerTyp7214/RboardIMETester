@@ -1,9 +1,9 @@
 package de.dertyp7214.rboardimetester.core
 
 import android.app.Activity
-import android.net.Uri
 import androidx.browser.customtabs.CustomTabColorSchemeParams
 import androidx.browser.customtabs.CustomTabsIntent
+import androidx.core.net.toUri
 import de.dertyp7214.rboardcomponents.core.getAttr
 
 fun Activity.openUrl(url: String) {
@@ -20,5 +20,5 @@ fun Activity.openUrl(url: String) {
                 .build()
         )
         .build()
-        .launchUrl(this, Uri.parse(url))
+        .launchUrl(this, url.toUri())
 }
