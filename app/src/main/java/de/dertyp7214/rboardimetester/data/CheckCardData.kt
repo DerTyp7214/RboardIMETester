@@ -4,9 +4,9 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 
 data class CheckCardData(
-    @StringRes
+    @param:StringRes
     val text: Int,
-    @DrawableRes
+    @param:DrawableRes
     val icon: Int,
     val isChecked: Boolean,
     val clickListener: (Boolean) -> Unit
